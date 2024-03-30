@@ -12,5 +12,11 @@ namespace HelloWorld.Controllers
         {
             return Ok(new { Message = "Hello World" });
         }
+
+        [HttpGet("GetData")]
+        public IActionResult GetData()
+        {
+            return Ok(new { Message = "Your data" });
+        }
     }
 }
